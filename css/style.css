@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+ 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* navbar  */
+#header .navbar-toggler-icon {
+    height: unset;
+    width: unset;
+
+    
+}
+
+
+
+
+/* crousal css */
+
+.home .home-banner-1,
+.home .home-banner-2 {
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 90% center;
+    min-height: 600px;
+    position: relative;
+}
+
+.home .home-banner-1 {
+    background-image: url(/img/ban1.jpg);
+}
+
+.home .home-banner-2 {
+    background-image: url(/img/ban2.jpg);
+}
+
+.home .home-banner .home-banner-text {
+
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-110%, -50%);
+}
+
+.home .home-banner .home-banner-text h1 {
+    font-size: 4.5rem;
+    color: rgb(0, 0, 0);
+}
+
+.home .home-banner .home-banner-text h2 {
+
+    color: rgb(7, 4, 4);
+}
+
+
+
+/* offer css */
+
+.offer {
+    padding-top: 2rem;
+
+}
+
+.offer .offer-box .offer-image::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 100%;
+    z-index: 2;
+    display: block;
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0.3)100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0)0%, rgba(255, 255, 255, 0.3)100%);
+    transform: skewX(-30deg);
+}
+
+.offer .offer-box .offer-image img {
+    transform: scale(1.02);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer .offer-box:hover .offer-image::before {
+    animation: effect_shine 1.5s;
+}
+
+@keyframes effect_shine {
+    100% {
+        left: 20%;
+    }
+}
+
+.offer .offer-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-blend-mode: darken;
+    z-index: 1;
+}
+
+.offer .offer-box .offer-info {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 250ms ease-out;
+    justify-content: center;
+}
+
+.offer .offer-box .offer-info .heading-bigger {
+    font-size: 4.3rem;
+    line-height: 1;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: rgb(255, 255, 255);
+
+}
+
+.offer .offer-box .offer-info .offer-title-1 {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+.offer .offer-box .offer-info .btn-outline-danger {
+    color: white;
+    border-color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.offer .offer-box .offer-info .btn-outline-danger:hover {
+
+    border-color: red;
+    border-color: red;
+}
+
+
+
+/* product css */
+.product {
+    padding-top: 7rem;
+
+}
+
+.headline h2::before {
+    content: '';
+    width: 35%;
+    height: 0.125rem;
+    background-color: rgb(255, 10, 10);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.625rem;
+}
+
+.product-list .product-image img {
+    transition: all 500ms ease-in-out;
+}
+
+.product-list .product-image .product-image-secondary img {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.product-list .product-image:hover .product-image-secondary img {
+    opacity: 1;
+
+
+}
+
+.product-list .product-name h3 {
+    font-size: 1.125rem;
+    color: black;
+    transition: all 0.3s ease 0s;
+
+}
+
+.product-list .product-name h3:hover {
+    color: red;
+
+}
+
+.product-list .product-name .amount {
+    color: red;
+    font-weight: 300;
+}
+
+.product-list .product-name .amount del {
+    color: grey;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-list .product-name .ti-star {
+    color: red;
+}
+
+.product-list .product-name .add_to_cart {
+    font-size: 1rem;
+    background: transparent;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+
+.product-list .product-name .add_to_cart:hover {
+    color: red;
+}
+
+
+
+
+.product .content h2{
+    color: white;
+    font-size: 1.62rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+
+
+
+/* special sec */
+.special{
+    padding: 5rem;
+    background-color:whitesmoke;
+}
+.special .countdown-container{
+    padding-top: 4 rem;
+}
+.special .countdown-container p{
+    color: gray;
+    font-weight: 500;
+  
+
+}
+
+.special .countdown-container .countdown-counter{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.9rem;
+
+}
+.special .countdown-container .countdown-counter  li{
+
+    display: inline-block;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-align: center;
+    background: rgb(189, 184, 184);
+    border-radius: 0.313rem;
+    padding: 2rem 2rem;
+    width: 20%;
+    margin: 0 0.313rem;
+
+}
+.special .countdown-container .countdown-counter  li span{
+    font-weight:400;
+}
+
+.special .countdown-container .countdown-prise del{
+    color: grey;
+    font-size: 1rem;
+}
+.special .special-img span{
+    background-color: rgb(255, 0, 0);
+    border-radius: 0.33rem;
+    color: white;
+    font-size: 0.814rem;
+    letter-spacing: 0.25rem;
+    line-height: 1.56rem;
+    padding: 0.12rem 0.813rem;
+    text-transform: uppercase;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    z-index: 99;
+
+}
+
+p{
+    color: rgb(10, 7, 7);
+}

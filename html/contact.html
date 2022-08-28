@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact-Us</title>
+
+
+  <!-- icon css -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!--  Bootstrap CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+  <!--  Bootstrap JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="/css/contact.css">
+
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION SECTION -->
+
+  <!-- <div id="header" > -->
+  <nav class=" shadow  navbar sticky-top  navbar-expand-lg bg-*">
+
+    <div class="container-fluid">
+      <a href="#">
+        <img src="/img/lg2.png" width="100px" alt="logo_img" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+
+        <span class="ti-align-justify navbar-toggler-icon"></span>
+
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto " style="font-weight: 500">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/html/index.html" style="color:black;">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </nav>
+
+
+
+
+
+  <section id="contact">
+
+    <h1 class="section-header">Contact-Us</h1>
+
+    <div class="contact-wrapper">
+
+      <!-- Left contact page -->
+
+      <form id="contact-form" class="form-horizontal" role="form">
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-12">
+            <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+          </div>
+        </div>
+
+        <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+
+        <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+          <div class="alt-send-button">
+            <i class="uil uil-telegram-alt"></i><span class="send-text">SEND</span>
+          </div>
+
+        </button>
+
+      </form>
+
+      <!-- Right contact page -->
+
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="uil uil-map-marker "><span class="contact-text place">New Delhi</span></i>
+          </li>
+
+          <li class="list-item"><i class="uil uil-phone "><span class="contact-text phone"><a href="tel:91-34343456"
+                  title="Give us a call">91-34343456</a></span></i></li>
+
+          <li class="list-item"><i class="uil uil-envelope "><span class="contact-text gmail"><a href="mailto:#"
+                  title="Send us an email">contact@shopin.com</a></span></i></li>
+
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="uil uil-github-alt"></i></a>
+          </li>
+
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="uil uil-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+              <i class="uil uil-instagram" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED BY SHOPIN.COM</div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+</body>
+
+</html>
